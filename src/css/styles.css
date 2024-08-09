@@ -23,3 +23,120 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+/* Загальні стилі для сторінки */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Центрування форми на сторінці */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  /* Відстань від верху сторінки */
+}
+
+/* Стилі для input */
+#search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+/* Стилі для кнопки */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Стилі для галереї */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  /* Відстань між галереєю та формою */
+}
+
+.gallery-item {
+  display: block;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  /* Фіксована висота для всіх зображень */
+  object-fit: cover;
+  /* Зображення зберігають пропорції, заповнюючи область */
+  display: block;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  /* Вирівнювання підписів по горизонталі */
+  padding: 10px 0;
+  /* Відступи зверху та знизу */
+  font-size: 14px;
+  /* Базовий розмір шрифту для іконок */
+  color: #333;
+  /* Колір тексту */
+  border-top: 1px solid #ccc;
+  /* Лінія зверху підписів */
+  background-color: #f9f9f9;
+  /* Фонова заливка підписів */
+}
+
+.info p {
+  margin: 0;
+  /* Відсутність відступів між елементами */
+  display: inline-block;
+  font-weight: bold;
+  /* Жирний шрифт для кращої видимості */
+}
+
+.info .number {
+  font-family: 'Montserrat', sans-serif;
+  /* Шрифт Montserrat */
+  font-size: 12px;
+  /* Розмір шрифту */
+  font-weight: 400;
+  /* Нормальна товщина шрифту */
+  line-height: 24px;
+  /* Висота рядка */
+  letter-spacing: 0.04em;
+  /* Інтервал між літерами */
+  text-align: left;
+  /* Вирівнювання тексту ліворуч */
+  margin-top: 5px;
+  /* Відступ між іконкою і числом */
+  display: block;
+}
